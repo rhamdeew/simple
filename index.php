@@ -30,6 +30,7 @@ if(isset($_REQUEST['logout']))
 elseif(isset($_SESSION['user_id'])) {
     $mydb = new myDB();
     $mydb->log();
+    echo "Recorded!";
 }
 elseif(isset($_REQUEST['login']) && isset($_REQUEST['password'])) {
     $mydb = new myDB();
